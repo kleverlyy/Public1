@@ -27,8 +27,8 @@ public class ButtonForConfirmOrAlert extends Application {
 		button = new Button("Click me");
 		
 		button.setOnAction(e -> {
-			boolean result = ConfirmBox.display("Title of Window", "Do you need to take a dump?");
-			System.out.println(result);
+			AlertBox.display();
+			//System.out.println(result);
 		});
 		
 		StackPane layout = new StackPane();
